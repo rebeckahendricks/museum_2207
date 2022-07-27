@@ -15,13 +15,13 @@ describe Museum do
     expect(dmns.name).to eq("Denver Museum of Nature and Science")
   end
 
-  xit 'has no exhibits by default' do
+  it 'has no exhibits by default' do
     dmns = Museum.new("Denver Museum of Nature and Science")
 
     expect(dmns.exhibits).to eq([])
   end
 
-  xit 'can add exhibits' do
+  it 'can add exhibits' do
     dmns = Museum.new("Denver Museum of Nature and Science")
 
     gems_and_minerals = Exhibit.new({name: "Gems and Minerals", cost: 0})
