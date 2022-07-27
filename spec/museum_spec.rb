@@ -59,7 +59,7 @@ describe Museum do
     expect(dmns.recommend_exhibits(patron_2)).to eq([imax])
   end
 
-  xit 'has no patrons by default' do
+  it 'has no patrons by default' do
     dmns = Museum.new("Denver Museum of Nature and Science")
 
     gems_and_minerals = Exhibit.new({name: "Gems and Minerals", cost: 0})
@@ -73,7 +73,7 @@ describe Museum do
     expect(dmns.patrons).to eq([])
   end
 
-  xit 'can admit patrons' do
+  it 'can admit patrons' do
     dmns = Museum.new("Denver Museum of Nature and Science")
 
     gems_and_minerals = Exhibit.new({name: "Gems and Minerals", cost: 0})
