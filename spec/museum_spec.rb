@@ -104,7 +104,7 @@ describe Museum do
     expect(dmns.patrons).to eq([patron_1, patron_2, patron_3])
   end
 
-  xit 'can list patrons by their exhibit interest' do
+  it 'can list patrons by their exhibit interest' do
     dmns = Museum.new("Denver Museum of Nature and Science")
 
     gems_and_minerals = Exhibit.new({name: "Gems and Minerals", cost: 0})
