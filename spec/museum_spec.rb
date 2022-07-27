@@ -3,13 +3,13 @@ require './lib/patron'
 require './lib/exhibit'
 
 describe Museum do
-  xit 'is an instance of Museum' do
+  it 'is an instance of Museum' do
     dmns = Museum.new("Denver Museum of Nature and Science")
 
     expect(dmns).to be_instance_of(Museum)
   end
 
-  xit 'has a name' do
+  it 'has a name' do
     dmns = Museum.new("Denver Museum of Nature and Science")
 
     expect(dmns.name).to eq("Denver Museum of Nature and Science")
