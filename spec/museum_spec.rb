@@ -204,7 +204,7 @@ describe Museum do
     expect(dmns.draw_lottery_winner(gems_and_minerals)).to eq(nil)
   end
 
-  xit 'can announce the lottery winner for an exhibit' do
+  it 'can announce the lottery winner for an exhibit' do
     dmns = Museum.new("Denver Museum of Nature and Science")
 
     gems_and_minerals = Exhibit.new({name: "Gems and Minerals", cost: 0})
@@ -232,9 +232,9 @@ describe Museum do
     dmns.admit(patron_2)
     dmns.admit(patron_3)
 
-    allow(dmns.draw_lottery_winner).to eq(patron_1)
+    # allow(dmns.draw_lottery_winner(patron)).to eq(patron_1)
 
-    expect(dmns.announce_lottery_winner(dead_sea_scrolls)).to eq("Bob has won the IMAX edhibit lottery")
+    expect(dmns.announce_lottery_winner(dead_sea_scrolls)).to eq("Bob has won the IMAX exhibit lottery")
     expect(dmns.announce_lottery_winner(gems_and_minerals)).to eq("No winners for this lottery")
   end
 
