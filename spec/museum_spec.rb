@@ -141,7 +141,7 @@ describe Museum do
     expect(dmns.patrons_by_exhibit).to eq(expected)
   end
 
-  xit 'can list lottery contestants for tickets to exhibits' do
+  it 'can list lottery contestants for tickets to exhibits' do
     dmns = Museum.new("Denver Museum of Nature and Science")
 
     gems_and_minerals = Exhibit.new({name: "Gems and Minerals", cost: 0})
